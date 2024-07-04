@@ -3,84 +3,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Donation Form</title>
-    <style>
-        body{
-            font-family: Arial, sans-serif;
-            margin: 50px;
-        }
-        .form-container{
-            max-width: 400px;
-            margin: auto;
-            padding: 20px;
-            border: 1px solid #c0bfbf;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgb(255, 18, 18);
-        }
-        .form-container h2{
-            text-align: center;
-            margin-bottom: 20px;
-        }
-        .form-group{
-            margin-bottom: 15px;
-        }
-        .form-group label{
-            display: block;
-            margin-bottom: 5px;
-        }
-        .form-group input{
-            width: calc(100% - 10px);
-            padding: 5px;
-            font-size: 1em;
-        }
-        .form-group button{
-            width: 100%;
-            padding: 10px;
-            background-color: #28a745;
-            color: white;
-            border: none;
-            font-size: 1em;
-            cursor: pointer;
-        }
-        .form-group button:hover{
-            background-color: #218838;
-        }
-    </style>
+    <title>IRCS WB | Donations</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="form-container">
-        <h2>Enter Your Details</h2>
-        <div class="form-group">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-        </div>
-        <div class="form-group">
-            <label for="address">Address:</label>
-            <input type="text" id="address" name="address" required>
-        </div>
-        <div class="form-group">
-            <label for="pan">PAN Number:</label>
-            <input type="text" id="pan" name="pan" required>
-        </div>
-        <div class="form-group">
-            <button onclick="submitForm()">Proceed to Payment</button>
-        </div>
-    </div>
-
-    <script>
-        function submitForm(){
-            const name = document.getElementById('name').value;
-            const address = document.getElementById('address').value;
-            const pan = document.getElementById('pan').value;
-
-            if(name && address && pan) {
-                alert('Form submitted successfully!');
-                window.location.href = 'https://www.new-site.com';
-            } else {
-                alert('Please fill out all fields.');
-            }
-        }
-    </script>
-
+    <header>
+        <h1>INDIAN RED CROSS WEST BENGAL | DONATIONS</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Please fill this form for online donations. All fields are compulsory.</h2>
+            <form>
+                <label for="title"><b>Title</b></label>
+                <select id="title" name="title">
+                    <option value="none">Title</option>
+                    <option value="mr">Mr.</option>
+                    <option value="mrs">Mrs.</option>
+                    <option value="ms">Ms.</option>
+                </select>
+                <label for="name"><b>Full Name</b></label>
+                <input type="text" id="name" name="name" required>
+                <label for="email"><b>Email</b></label>
+                <input type="email" id="email" name="email" required>
+                <label for="pan"><b>PAN Number</b></label>
+                <input type="text" id="pan" name="pan">
+                <label for="amount"><b>Amount</b></label>
+                <input type="number" id="amount" name="amount" required>
+                <label for="purpose"><b>Purpose</b></label>
+                <select id="purpose" name="purpose" required>
+                    <option value="Unspecified">Unspecified</option>
+                    <option value="Staff Welfare">Staff Welfare</option>
+                    <option value="Healthcare">Healthcare</option>
+                    <option value="Disaster Relief">Disaster Relief</option>
+                    <option value="Infrastructure development">Infrastructure development</option>
+                    <option value="Financial Assistance">Financial Assistance</option>
+                </select>
+                <label for="address"><b>Address</b></label>
+                <input type="text" id="address" name="address" required>
+                <label for="pincode"><b>Pincode</b></label>
+                <input type="text" id="pincode" name="pincode" required>
+                <label for="state"><b>State/UT</b></label>
+                <select id="state" name="state" required>
+                    <option value="none">Select state</option>
+                    <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+                    <option value="Andhra Pradesh">Andhra Pradesh</option>
+                    <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                    <option value="Assam">Assam</option>
+                    <option value="Bihar">Bihar</option>
+                    <option value="Chandigarh">Chandigarh</option>
+                    <option value="Chattisgarh">Chattisgarh</option>
+                    <option value="Dadra and Nagar Haveli">Dadra and Nagar Haveli</option>
+                    <option value="Daman and Diu">Daman and Diu</option>
+                    <option value="Delhi">Delhi</option>
+                    <option value="Goa">Goa</option>
+                    <option value="Gujarat">Gujarat</option>
+                    <option value="Haryana">Haryana</option>
+                    <option value="Himachal Pradesh">Himachal Pradesh</option>
+                    <option value="J&K">Jammu & Kashmir</option>
+                    <option value="Jharkhand">Jharkhand</option>
+                    <option value="Karnataka">Karnataka</option>
+                    <option value="Kerala">Kerala</option>
+                    <option value="Ladakh">Ladakh</option>
+                    <option value="Lakshadweep">Lakshadweep</option>
+                    <option value="Madhya Pradesh">Madhya Pradesh</option>
+                    <option value="Maharashtra">Maharashtra</option>
+                    <option value="Manipur">Manipur</option>
+                    <option value="Meghalaya">Meghalaya</option>
+                    <option value="Mizoram">Mizoram</option>
+                    <option value="Nagaland">Nagaland</option>
+                    <option value="Odisha">Odisha</option>
+                    <option value="Puducherry">Puducherry</option>
+                    <option value="Punjab">Punjab</option>
+                    <option value="Rajasthan">Rajasthan</option>
+                    <option value="Sikkim">Sikkim</option>
+                    <option value="Tamil Nadu">Tamil Nadu</option>
+                    <option value="Telangana">Telangana</option>
+                    <option value="Tripura">Tripura</option>
+                    <option value="Uttar Pradesh">Uttar Pradesh</option>
+                    <option value="Uttarakhand">Uttarakhand</option>
+                    <option value="West Bengal">West Bengal</option>
+                </select>
+                <label for="mobile"><b>Mobile Number(+91)</b></label>
+                <input type="text" id="mobile" name="mobile" required>
+                <button type="submit"><b>Proceed</b></button>
+            </form>
+        </section>
+    </main>
 </body>
 </html>
