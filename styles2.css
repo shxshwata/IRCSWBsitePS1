@@ -1,0 +1,64 @@
+/* styles.css */
+body {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #bb0000;
+    color: white;
+    padding: 1em;
+    text-align: center;
+}
+
+h2{
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    padding: 2em;
+}
+
+form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+}
+
+form label {
+    grid-column: span 2;
+}
+
+form input, form select {
+    grid-column: span 2;
+}
+
+form button {
+    grid-column: span 2;
+    padding: 0.5em;
+    background-color: #ffe100;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(0, 0, 0);
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #bea400;
+}
