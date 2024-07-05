@@ -3,93 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IRCS WB | Donations</title>
+    <title>IRCS WB</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>INDIAN RED CROSS WEST BENGAL | DONATIONS</h1>
+        <div class="logo">
+            <img src="ircslogo.png" alt="Indian Red Cross Society">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="programs.html">Programs</a></li>
+                <li><a href="branches.html">Branches</a></li>
+                <li><a href="updatedpaymentform.html">Donate</a></li>
+            </ul>
+        </nav>
     </header>
     <main>
-        <section>
-            <h2>Please fill this form for online donations. All fields are compulsory.</h2>
-            <form>
-                <label for="title"><b>Title</b></label>
-                <select id="title" name="title">
-                    <option value="none">Title</option>
-                    <option value="mr">Mr.</option>
-                    <option value="mrs">Mrs.</option>
-                    <option value="ms">Ms.</option>
-                </select>
-                <label for="name"><b>Full Name</b></label>
-                <input type="text" id="name" name="name" required>
-                <label for="company name"><b>Company (Optional)</b></label>
-                <input type="text" id="company name" name="company name">
-                <label for="email"><b>Email</b></label>
-                <input type="email" id="email" name="email" required>
-                <label for="pan"><b>PAN Number</b></label>
-                <input type="text" id="pan" name="pan">
-                <label for="amount"><b>Amount</b></label>
-                <input type="number" id="amount" name="amount" required>
-                <label for="purpose"><b>Purpose</b></label>
-                <select id="purpose" name="purpose" required>
-                    <option value="Unspecified">Unspecified</option>
-                    <option value="Staff Welfare">Staff Welfare</option>
-                    <option value="Healthcare">Healthcare</option>
-                    <option value="Disaster Relief">Disaster Relief</option>
-                    <option value="Infrastructure development">Infrastructure development</option>
-                    <option value="Financial Assistance">Financial Assistance</option>
-                </select>
-                <label for="address"><b>Address</b></label>
-                <input type="text" id="address" name="address" required>
-                <label for="pincode"><b>Pincode</b></label>
-                <input type="text" id="pincode" name="pincode" required>
-                <label for="state"><b>State/UT</b></label>
-                <select id="state" name="state" required>
-                    <option value="none">Select state</option>
-                    <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
-                    <option value="Andhra Pradesh">Andhra Pradesh</option>
-                    <option value="Arunachal Pradesh">Arunachal Pradesh</option>
-                    <option value="Assam">Assam</option>
-                    <option value="Bihar">Bihar</option>
-                    <option value="Chandigarh">Chandigarh</option>
-                    <option value="Chattisgarh">Chattisgarh</option>
-                    <option value="Dadra and Nagar Haveli">Dadra and Nagar Haveli</option>
-                    <option value="Daman and Diu">Daman and Diu</option>
-                    <option value="Delhi">Delhi</option>
-                    <option value="Goa">Goa</option>
-                    <option value="Gujarat">Gujarat</option>
-                    <option value="Haryana">Haryana</option>
-                    <option value="Himachal Pradesh">Himachal Pradesh</option>
-                    <option value="J&K">Jammu & Kashmir</option>
-                    <option value="Jharkhand">Jharkhand</option>
-                    <option value="Karnataka">Karnataka</option>
-                    <option value="Kerala">Kerala</option>
-                    <option value="Ladakh">Ladakh</option>
-                    <option value="Lakshadweep">Lakshadweep</option>
-                    <option value="Madhya Pradesh">Madhya Pradesh</option>
-                    <option value="Maharashtra">Maharashtra</option>
-                    <option value="Manipur">Manipur</option>
-                    <option value="Meghalaya">Meghalaya</option>
-                    <option value="Mizoram">Mizoram</option>
-                    <option value="Nagaland">Nagaland</option>
-                    <option value="Odisha">Odisha</option>
-                    <option value="Puducherry">Puducherry</option>
-                    <option value="Punjab">Punjab</option>
-                    <option value="Rajasthan">Rajasthan</option>
-                    <option value="Sikkim">Sikkim</option>
-                    <option value="Tamil Nadu">Tamil Nadu</option>
-                    <option value="Telangana">Telangana</option>
-                    <option value="Tripura">Tripura</option>
-                    <option value="Uttar Pradesh">Uttar Pradesh</option>
-                    <option value="Uttarakhand">Uttarakhand</option>
-                    <option value="West Bengal">West Bengal</option>
-                </select>
-                <label for="mobile"><b>Mobile Number(+91)</b></label>
-                <input type="text" id="mobile" name="mobile" required>
-                <button type="submit"><b>Proceed</b></button>
-            </form>
-        </section>
+        <section id="home">
+            <h1><b>Indian Red Cross Society West Bengal Branch</b></h1>
+            <div class="row">
+                <div class="column">
+                  <img src="home1.jpg" style="width:100%">
+                </div>
+                <div class="column">
+                  <img src="home2.jpg" style="width:100%">
+                </div>
+                <div class="column">
+                  <img src="home3.jpg" style="width:100%">
+                </div>
+              </div>
+            <p>The Indian Red Cross Society West Bengal branch (IRCS WB) is a voluntary humanitarian organization to protect human life 
+                and health based in West Bengal, as the name suggests. It is part of the International Red Cross and Red Crescent Movement
+                 and shares the Fundamental Principles of the International Red Cross and Red Crescent Movement. The society's mission is 
+                 to provide relief in times of disasters/emergencies and promote health and care of vulnerable people and communities. It has
+                 21 district branches in the state and 12 sub-division branches. The president of IRCS WB is the governor of West Bengal.
+            </p>
+        
     </main>
+    <footer>
+        <p>&copy; 2024 Indian Red Cross Society Kolkata</p>
+    </footer>
 </body>
 </html>
