@@ -1,6 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <style>
+        div.gallery {
+          border: 1px solid #ccc;
+        }
+        
+        div.gallery:hover {
+          border: 1px solid #777;
+        }
+        
+        div.gallery img {
+          width: 100%;
+          height: auto;
+        }
+        
+        div.desc {
+          padding: 15px;
+          text-align: center;
+        }
+        
+        * {
+          box-sizing: border-box;
+        }
+        
+        .responsive {
+          padding: 0 6px;
+          float: left;
+          width: 24.99999%;
+        }
+        
+        @media only screen and (max-width: 700px) {
+          .responsive {
+            width: 49.99999%;
+            margin: 6px 0;
+          }
+        }
+        
+        @media only screen and (max-width: 500px) {
+          .responsive {
+            width: 100%;
+          }
+        }
+        
+        .clearfix:after {
+          content: "";
+          display: table;
+          clear: both;
+        }
+        </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About IRCS WB</title>
@@ -24,6 +72,71 @@
     <main>
         <section id="about">
             <h1>About Us</h1>
-
+            <p>The Indian Red Cross Society West Bengal State Branch is a voluntary humanitarian organization having a 
+                network of 21 district and 12 sub-division branches in the state, providing relief in times of 
+                disasters/emergencies and promotes health & care of the vulnerable people and communities. It is a
+                 leading member of the largest independent humanitarian organization in the world, the International 
+                 Red Cross & Red Crescent Movement.</p>
+            <p>The Mission of the Indian Red Cross is to inspire, encourage and initiate at all times all forms of 
+                humanitarian activities so that human suffering can be minimized and even prevented and thus contribute 
+                to creating more congenial climate for peace.</p>
+            <ul>
+                <li>Indian Red Cross Society (IRCS) was established in 1920 under the Indian Red Cross Society Act and 
+                    incorporated under Parliament Act XV of 1920. The act was last amended in 1992 and of rules were formed in 1994.</li>
+                <li>Honourable Governor of West Bengal, Dr. C.V. Ananda Bose is the current President of IRCS WBSB.</li>
+                <li>Mr. Sandeep Kumar Singh is the current General Secretary of IRCS WBSB.</li>
+                <li>Dr. S.K. Pattanayak, IAS(Retd.) is the Honourable Chairman of IRCS WBSB.</li>
+            </ul>
         </section>
     </main>
+
+<div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="about1.jpg">
+        <img src="about1.jpg" width="600" height="400">
+      </a>
+      <div class="desc">Hon'ble Governor of WB & the President of IRCS WBSB visited SHQ</div>
+    </div>
+  </div>
+  
+  
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="about2.jpg">
+        <img src="about2.jpg" width="600" height="400">
+      </a>
+      <div class="desc">Staff Members of IRCS WBSB with H.E. the Governor of West Bengal and the President of IRCS WBSB in one frame</div>
+    </div>
+  </div>
+  
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="about3.jpg">
+        <img src="about3.jpg" width="600" height="400">
+      </a>
+      <div class="desc">IRCS WBSB State Managing Body Meeting</div>
+    </div>
+  </div>
+  
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="about4.jpg">
+        <img src="about4.jpg" width="600" height="400">
+      </a>
+      <div class="desc">Dr. C.V.Ananda Bose, Hon'ble Governor of West Bengal and the President of IRCS WBSB presents gifts to the Red Cross Facilitators at Raj Bhavan</div>
+    </div>
+  </div>
+  
+  <div class="clearfix"></div>
+  
+  <div style="padding:20px;">
+    <h2>Address and Contact info:</h2>
+    <p>Indian Red Cross Society, West Bengal State Branch</p>
+    <p>5 & 6 Government Place, North Kolkata- 700001</p><br>
+    <p>STD Code: 033</p>
+    <p>(O) 22483636, 22315745;</p>
+    <p>Fax : 22103385</p><br>
+    <p>ircswbstatebranch@gmail.com</p>
+  </div>
+</body>
+</html>
