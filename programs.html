@@ -1,6 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <style>
+        div.gallery {
+          border: 1px solid #ccc;
+        }
+        
+        div.gallery:hover {
+          border: 1px solid #777;
+        }
+        
+        div.gallery img {
+          width: 100%;
+          height: auto;
+        }
+        
+        div.desc {
+          padding: 15px;
+          text-align: center;
+        }
+        
+        * {
+          box-sizing: border-box;
+        }
+        
+        .responsive {
+          padding: 0 6px;
+          float: left;
+          width: 24.99999%;
+        }
+        
+        @media only screen and (max-width: 700px) {
+          .responsive {
+            width: 49.99999%;
+            margin: 6px 0;
+          }
+        }
+        
+        @media only screen and (max-width: 500px) {
+          .responsive {
+            width: 100%;
+          }
+        }
+        
+        .clearfix:after {
+          content: "";
+          display: table;
+          clear: both;
+        }
+        </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Programs | IRCS WB</title>
@@ -24,9 +72,74 @@
     <main>
         <section id="programs">
             <h1>Our Programs</h1>
-            
-        </section>
-    </main>
+
+            <div class="responsive">
+                <div class="gallery">
+                  <a target="_blank" href="programs1.jpg">
+                    <img src="programs1.jpg" width="600" height="400">
+                  </a>
+                  <div class="desc">First Aid Training at IRCS WBSB HQ</div>
+                </div>
+              </div>
+              
+              
+            <div class="responsive">
+                <div class="gallery">
+                  <a target="_blank" href="programs2.jpg">
+                    <img src="programs2.jpg" width="600" height="400">
+                  </a>
+                  <div class="desc">Blood donation being done</div>
+                </div>
+            </div>
+              
+            <div class="responsive">
+                <div class="gallery">
+                  <a target="_blank" href="programs3.jpg">
+                    <img src="programs3.jpg" width="600" height="400">
+                  </a>
+                  <div class="desc">People gathered at a blood donation camp</div>
+                </div>
+            </div>
+              
+            <div class="responsive">
+                <div class="gallery">
+                  <a target="_blank" href="programs4.jpg">
+                    <img src="programs4.jpg" width="600" height="400">
+                  </a>
+                  <div class="desc">First Aid Training regarding carrying an injured person</div></div>
+            </div>
+              
+            <div class="clearfix"></div>
+    
+            <h2>
+                First Aid Training Program
+            </h2>
+            <p>We organise first-aid training regularly to help citizens of the state to learn the basic first-aid skills.
+               The training is conducted by the staff of the Indian Red Cross West Bengal State Branch.
+            </p>
+            <h2>Blood Donation Camps</h2>
+            <p>We organise blood donation camps frequently and coordinate with Central Blood Bank Authority. The benefits of
+               donating blood include helping people injured in accidents, undergoing cancer treatment, and battling blood 
+               diseases, among other reasons.</p>
+            <h2>SMS Campaign during COVID-19</h2>
+            <P>SMS stands for S-Soaps/Sanitizers, M-Mask, S-Social Distancing. This campaign was done to minimise the spread of 
+                the COVID-19 virus. Red Cross SHQ staff & volunteers distributed masks, soaps & sanitary napkins to people in 
+                multiple district and sub-division branches.
+            </P>
+            <p>No curable medicines were found for COVID-19 Pandemic. So we stressed on preventive measures. There was an awareness
+                 campaign carried out about wearing masks when outside, washing hands with soaps frequently and to maintain physical
+                  distance to prevent the spread of corona infections from time to time. More than 1,50,000 masks were distrubuted during the 
+                  campaigns in the biggest festival of Bengal to generate interests. The main theme of the programme was "Prevention is better than cure."
+            </p>
+            <h2>Relief Programmes</h2>
+            <p>The cyclone AMPHAN devastated coastal districts of South Bengal last year. The cyclone VYAS has also affected 
+                badly the lives of many people this year. In addition, large areas of South Bengal and parts of North Bengal were
+                 flooded due to incessant rains and release of water from dams.</p>
+            <p>Red Cross like all other occasions of disasters in the past has tried its best to reach the needy and affected 
+                people with relief materials like tarpoulins, hygiene kits, mosquito nets, clothes, food packets, buckets, etc.</p>
+        
+            </section>
+        </main>
     <footer>
         <p>&copy; 2024 Indian Red Cross Society Kolkata</p>
     </footer>
